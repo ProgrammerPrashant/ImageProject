@@ -59,7 +59,7 @@
                         props.cateImageData.map((item,index) => {
                             return (
                               <TouchableOpacity onPress={() => {favouriteCheck(item.id)}} style={{marginTop:5, flex:1}}>
-                              <Image key={item.id} source={{ uri : Config.imagePath + item.image_path }} style={{height:200,width:300, resizeMode:"stretch"}}  />
+                              <Image key={item.id.toString()} source={{ uri : Config.imagePath + item.image_path }} style={{height:200,width:300, resizeMode:"stretch"}}  />
                               </TouchableOpacity>
 
                             )

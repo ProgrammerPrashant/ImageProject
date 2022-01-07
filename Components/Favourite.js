@@ -18,7 +18,7 @@ const Favourite = (props) => {
     const [favImages, setFavImages] = useState([]);
     useEffect(() => {
         getFavIds();
-
+     
     },[favImages]);
 
     const getFavIds = async () => {
@@ -31,7 +31,7 @@ const Favourite = (props) => {
         }
         else {
           myarr = JSON.parse(favs);
-          console.log(myarr);
+      
           let stringIds = myarr.join();
           fetchFavs(stringIds);
 
